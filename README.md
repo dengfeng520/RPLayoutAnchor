@@ -34,7 +34,7 @@ pod 'RPAnchor', :git => 'https://github.com/dengfeng520/RPLayoutAnchor'
 pod install
 ```
 
-**3、 Include RPToastView wherever you need it with**
+**3、 Include RPAnchor wherever you need it with**
 
 ```Objective-C
 #import "UIView+Anchor.h"
