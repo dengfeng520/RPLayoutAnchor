@@ -27,6 +27,7 @@ typedef NS_ENUM(NSInteger, RPdirection) {
     rpCenterY,
 };
 
+- (UIView *(^)(void))rp_config;
 - (UIView *(^)(UIView *))rp_addView;
 
 - (UIView *(^)(CGFloat,UIView*))rp_leading;

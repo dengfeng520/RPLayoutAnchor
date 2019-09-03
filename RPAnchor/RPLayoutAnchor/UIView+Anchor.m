@@ -13,6 +13,14 @@
 
 @implementation UIView (Anchor)
 
+- (UIView *(^)(void))rp_config {
+    @rp_weakSelf(self);
+    return ^(void){
+        @rp_strongSelf(self);
+        self.translatesAutoresizingMaskIntoConstraints = false;
+        return self;
+    };
+}
 // MARK:- addView
 - (UIView *(^)(UIView *))rp_addView {
     @rp_weakSelf(self);
