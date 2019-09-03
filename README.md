@@ -8,7 +8,7 @@
 
 <h2>Requirements</h2>
 
-**RPAnchor is a chained programming library that encapsulates the system's 'NSLayoutConstraint'. Used RPAnchor you can write clean code.**
+**RPAnchor is a chained programming library that encapsulates the system's 'NSLayoutConstraint'. Used RPAnchor you can clean coding.**
 
 ![demo1](https://github.com/dengfeng520/RPLayoutAnchor/blob/master/demo1.png?raw=true)
 
