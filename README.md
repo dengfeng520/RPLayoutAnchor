@@ -8,7 +8,7 @@
 
 <h2>Requirements</h2>
 
-**RPAnchor is a chained programming library that encapsulates the system's NSLayoutAnchor. Used RPAnchor you can write more concise code.RPAnchor works on iOS 9+ and requires to build.**
+**RPAnchor is a chained programming library that encapsulates the system's 'NSLayoutAnchor'. Used RPAnchor you can write clean Code.RPAnchor works on iOS 9+ requires to build.**
 
 <h2>Adding RPAnchor to your project</h2>
 
