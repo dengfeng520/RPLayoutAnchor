@@ -76,5 +76,27 @@ orangeView
 .rp_top(20,blueView,rpBottom)
 .rp_height(45);
 orangeView.backgroundColor = UIColor.orangeColor;
+
+//---------------------
+UIImageView *fristGrilImg = [[UIImageView alloc] init];
+fristGrilImg.rp_addView(self.view)
+.rp_safeAreaTop(20,self.view,rpSafeTop)
+.rp_centerX(0,self.view,rpCenterX)
+.rp_height(250)
+.rp_multiplierWidth(1.45,fristGrilImg,rpHeight);
+fristGrilImg.image = [UIImage imageNamed:@"one_gril"];
+fristGrilImg.backgroundColor = UIColor.redColor;
+
+//---------------------
+UIImageView *secondGrilImg = [[UIImageView alloc] init];
+[self.view addSubview:secondGrilImg];
+secondGrilImg.rp_config()
+.rp_top(10,fristGrilImg,rpBottom)
+.rp_centerX(0,self.view,rpCenterX)
+.rp_width(280)
+.rp_multiplierHeight(1.46,secondGrilImg,rpWidth);
+secondGrilImg.image = [UIImage imageNamed:@"second_gril"];
+
 ```
+
 ![demo.png](https://github.com/dengfeng520/RPLayoutAnchor/blob/master/demo.png?raw=true)
