@@ -23,6 +23,7 @@ typedef NS_ENUM(NSInteger, RPdirection) {
     rpSafeBottom,
     rpWidth,
     rpHeight,
+    rpCenter,
     rpCenterX,
     rpCenterY,
 };
@@ -57,6 +58,7 @@ typedef NS_ENUM(NSInteger, RPdirection) {
 - (UIView *(^)(CGFloat))rp_greaterHeight;
 - (UIView *(^)(CGFloat,UIView*,RPdirection))rp_multiplierGreaterHeight;
 
+- (UIView *(^)(UIView*))rp_center;
 - (UIView *(^)(CGFloat,UIView*,RPdirection))rp_centerX;
 - (UIView *(^)(CGFloat,UIView*,RPdirection))rp_centerY;
 

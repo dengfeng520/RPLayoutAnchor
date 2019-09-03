@@ -215,6 +215,17 @@
         return self;
     };
 }
+// MARK: - center
+- (UIView *(^)(UIView*))rp_center {
+    @rp_weakSelf(self);
+    return ^(UIView *withView){
+        NSAssert(withView, @"withView must not be empty");
+        @rp_strongSelf(self);
+        [[self.centerXAnchor constraintEqualToAnchor:withView.centerXAnchor constant:0] setActive:true];
+        [[self.centerYAnchor constraintEqualToAnchor:withView.centerYAnchor constant:0] setActive:true];
+        return self;
+    };
+}
 // MARK: - centerXAnchor
 - (UIView *(^)(CGFloat,UIView*,RPdirection))rp_centerX {
     @rp_weakSelf(self);
