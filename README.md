@@ -37,7 +37,7 @@ pod install
 ```Objective-C
 #import "UIView+Anchor.h"
 ```
-```
+```Objective-C
 //--------------------- redView
 UIView *redView = [[UIView alloc] init];
 redView
@@ -77,3 +77,4 @@ orangeView
 .rp_height(45);
 orangeView.backgroundColor = UIColor.orangeColor;
 ```
+![demo.png](https://github.com/dengfeng520/RPLayoutAnchor/blob/master/demo.png?raw=true)
