@@ -23,10 +23,10 @@
     UIView *redView = [[UIView alloc] init];
     redView
     .rp_addView(self.view)
-    .rp_safeAreaTop(0,self.view,rpTop)
+    .rp_safeAreaTop(0,self.view,rpSafeTop)
     .rp_left(0,self.view,rpLeft)
     .rp_right(0,self.view,rpRight)
-    .rp_safeAreaBottom(0,self.view,rpBottom);
+    .rp_safeAreaBottom(0,self.view,rpSafeBottom);
     redView.backgroundColor = UIColor.redColor;
     //--------------------- blueView
     UIView *blueView = [[UIView alloc] init];
