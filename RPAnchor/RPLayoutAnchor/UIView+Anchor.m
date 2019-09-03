@@ -28,7 +28,7 @@
 - (UIView *(^)(CGFloat,UIView*))rp_leading {
     @rp_weakSelf(self);
     return ^(CGFloat leading,UIView *withView){
-        NSAssert(leading, @"withView must not be empty");
+        NSAssert(withView, @"withView must not be empty");
         @rp_strongSelf(self);
         [[self.leadingAnchor constraintEqualToAnchor:withView.leadingAnchor constant:leading] setActive:true];
         return self;
@@ -38,7 +38,7 @@
 - (UIView *(^)(CGFloat,UIView*))rp_trailing {
     @rp_weakSelf(self);
     return ^(CGFloat trailing,UIView *withView){
-        NSAssert(trailing, @"withView must not be empty");
+        NSAssert(withView, @"withView must not be empty");
         @rp_strongSelf(self);
         [[self.trailingAnchor constraintEqualToAnchor:withView.trailingAnchor constant:trailing] setActive:true];
         return self;
