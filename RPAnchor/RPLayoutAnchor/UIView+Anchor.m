@@ -310,6 +310,7 @@
 }
 
 - (NSLayoutDimension *)fetchDimension:(RPdirection)attribute withView:(UIView *)isView {
+    NSAssert(attribute, @"attribute must not be empty");
     // -----------------------------
     if (attribute == rpWidth) {
         return isView.widthAnchor;

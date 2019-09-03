@@ -19,6 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = @"demo";
+    
     //--------------------- redView
     UIView *redView = [[UIView alloc] init];
     redView
@@ -56,5 +58,8 @@
     orangeView.backgroundColor = UIColor.orangeColor;
 }
 
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UIViewController *grilsViewm = [[NSClassFromString(@"GrilsViewController") alloc] init];
+    [self.navigationController pushViewController:grilsViewm animated:true];
+}
 @end
