@@ -330,8 +330,18 @@
     if (attribute == rpHeight) {
         return isView.heightAnchor;
     }
-   
     return self.superview.widthAnchor;
+}
+
+- (BOOL)isiPhoneX {
+    if (@available(iOS 11.0, *)) {
+        UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+        CGFloat bottomSafeInset = keyWindow.safeAreaInsets.bottom;
+        if (bottomSafeInset == 34 || bottomSafeInset == 21) {
+            return true;
+        }
+    }
+    return false;
 }
 
 @end

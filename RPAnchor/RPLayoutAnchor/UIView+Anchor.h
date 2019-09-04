@@ -65,6 +65,8 @@ typedef NS_ENUM(NSInteger, RPdirection) {
 - (UIView *(^)(CGFloat,CGFloat))rp_size;
 - (UIView *(^)(CGSize))rp_cgsize;
 
+@property (assign, nonatomic) BOOL isiPhoneX;
+
 @end
 
 NS_ASSUME_NONNULL_END
