@@ -2,6 +2,8 @@
 
 * iOS 9.0+
 
+* Xcode 10.0+
+
 * pod V1.7.0+
 
 * license MIT
