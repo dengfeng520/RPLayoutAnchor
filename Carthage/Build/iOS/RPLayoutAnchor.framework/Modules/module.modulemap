@@ -1,0 +1,6 @@
+framework module RPLayoutAnchor {
+  umbrella header "RPLayoutAnchor.h"
+
+  export *
+  module * { export * }
+}

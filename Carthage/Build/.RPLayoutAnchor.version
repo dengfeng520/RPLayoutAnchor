@@ -8,11 +8,11 @@
   "tvOS" : [
 
   ],
-  "commitish" : "6dd8d290febef1a06efbf41f16626b7591cbe7f5",
+  "commitish" : "a790aab8d53495c3947dc44495308c59800fbd89",
   "iOS" : [
     {
-      "name" : "RPAbchor",
-      "hash" : "aa60ddb8e0a68c155f8ccbbc15dcb8f63dd50e1a90fe1134af38c9052a9a0064",
+      "name" : "RPLayoutAnchor",
+      "hash" : "8beddb7d76d3c26bf0c61aed1548a5b0c89143bd8b3d17d3445fb29ff73f9089",
       "linking" : "dynamic"
     }
   ]

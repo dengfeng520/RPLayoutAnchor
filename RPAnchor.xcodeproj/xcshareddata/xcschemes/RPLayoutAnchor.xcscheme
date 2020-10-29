@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1DA9C5A8254ACE2400A5EB81"
-               BuildableName = "RPAbchor.framework"
-               BlueprintName = "RPAbchor"
+               BlueprintIdentifier = "1DA9C5D1254AD2EE00A5EB81"
+               BuildableName = "RPLayoutAnchor.framework"
+               BlueprintName = "RPLayoutAnchor"
                ReferencedContainer = "container:RPAnchor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DA9C5A8254ACE2400A5EB81"
-            BuildableName = "RPAbchor.framework"
-            BlueprintName = "RPAbchor"
+            BlueprintIdentifier = "1DA9C5D1254AD2EE00A5EB81"
+            BuildableName = "RPLayoutAnchor.framework"
+            BlueprintName = "RPLayoutAnchor"
             ReferencedContainer = "container:RPAnchor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
