@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "6dd8d290febef1a06efbf41f16626b7591cbe7f5",
+  "iOS" : [
+    {
+      "name" : "RPAbchor",
+      "hash" : "aa60ddb8e0a68c155f8ccbbc15dcb8f63dd50e1a90fe1134af38c9052a9a0064",
+      "linking" : "dynamic"
+    }
+  ]
+}

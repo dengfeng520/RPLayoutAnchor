@@ -1,0 +1,274 @@
+BCSymbolMap Version: 2.0
+Apple clang version 12.0.0 (clang-1200.0.32.21)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk
+iPhoneOS14.1.sdk
+/Users/boxinkeji/Library/Developer/Xcode/DerivedData/RPAnchor-foyokxhgyjfjgyhgpcvyxpmbeuwv/Build/Intermediates.noindex/ArchiveIntermediates/RPAbchor/IntermediateBuildFilesPath/RPAnchor.build/Release-iphoneos/RPAbchor.build/DerivedSources/RPAbchor_vers.c
+/Users/boxinkeji/Desktop/MyBlocks/RPLayoutAnchor
+-[UIView(Anchor) rp_config]
+___27-[UIView(Anchor) rp_config]_block_invoke
+___copy_helper_block_e8_32w
+___destroy_helper_block_e8_32w
+-[UIView(Anchor) rp_addView]
+___28-[UIView(Anchor) rp_addView]_block_invoke
+-[UIView(Anchor) rp_activate]
+___29-[UIView(Anchor) rp_activate]_block_invoke
+-[UIView(Anchor) rp_leading]
+___28-[UIView(Anchor) rp_leading]_block_invoke
+-[UIView(Anchor) rp_trailing]
+___29-[UIView(Anchor) rp_trailing]_block_invoke
+-[UIView(Anchor) rp_top]
+___24-[UIView(Anchor) rp_top]_block_invoke
+-[UIView(Anchor) rp_left]
+___25-[UIView(Anchor) rp_left]_block_invoke
+-[UIView(Anchor) rp_right]
+___26-[UIView(Anchor) rp_right]_block_invoke
+-[UIView(Anchor) rp_bottom]
+___27-[UIView(Anchor) rp_bottom]_block_invoke
+-[UIView(Anchor) rp_width]
+___26-[UIView(Anchor) rp_width]_block_invoke
+-[UIView(Anchor) rp_multiplierWidth]
+___36-[UIView(Anchor) rp_multiplierWidth]_block_invoke
+-[UIView(Anchor) rp_lessWidth]
+___30-[UIView(Anchor) rp_lessWidth]_block_invoke
+-[UIView(Anchor) rp_multiplierLessWidth]
+___40-[UIView(Anchor) rp_multiplierLessWidth]_block_invoke
+-[UIView(Anchor) rp_greaterWidth]
+___33-[UIView(Anchor) rp_greaterWidth]_block_invoke
+-[UIView(Anchor) rp_multiplierGreaterWidth]
+___43-[UIView(Anchor) rp_multiplierGreaterWidth]_block_invoke
+-[UIView(Anchor) rp_height]
+___27-[UIView(Anchor) rp_height]_block_invoke
+-[UIView(Anchor) rp_multiplierHeight]
+___37-[UIView(Anchor) rp_multiplierHeight]_block_invoke
+-[UIView(Anchor) rp_lessHeight]
+___31-[UIView(Anchor) rp_lessHeight]_block_invoke
+-[UIView(Anchor) rp_multiplierLessHeight]
+___41-[UIView(Anchor) rp_multiplierLessHeight]_block_invoke
+-[UIView(Anchor) rp_greaterHeight]
+___34-[UIView(Anchor) rp_greaterHeight]_block_invoke
+-[UIView(Anchor) rp_multiplierGreaterHeight]
+___44-[UIView(Anchor) rp_multiplierGreaterHeight]_block_invoke
+-[UIView(Anchor) rp_center]
+___27-[UIView(Anchor) rp_center]_block_invoke
+-[UIView(Anchor) rp_centerX]
+___28-[UIView(Anchor) rp_centerX]_block_invoke
+-[UIView(Anchor) rp_centerY]
+___28-[UIView(Anchor) rp_centerY]_block_invoke
+-[UIView(Anchor) rp_size]
+___25-[UIView(Anchor) rp_size]_block_invoke
+-[UIView(Anchor) rp_cgsize]
+___27-[UIView(Anchor) rp_cgsize]_block_invoke
+-[UIView(Anchor) isiPhoneX]
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_SELECTOR_REFERENCES_.2
+___block_descriptor_40_e8_32w_e13_"UIView"8?0l
+_OBJC_SELECTOR_REFERENCES_.4
+___block_descriptor_40_e8_32w_e24_"UIView"16?0"UIView"8l
+_OBJC_SELECTOR_REFERENCES_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_SELECTOR_REFERENCES_.11
+___block_descriptor_40_e8_32w_e35_"UIView"24?0d8"NSLayoutAnchor"16l
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_SELECTOR_REFERENCES_.18
+_OBJC_SELECTOR_REFERENCES_.20
+_OBJC_SELECTOR_REFERENCES_.22
+_OBJC_SELECTOR_REFERENCES_.24
+_OBJC_SELECTOR_REFERENCES_.26
+_OBJC_SELECTOR_REFERENCES_.28
+___block_descriptor_40_e8_32w_e16_"UIView"16?0d8l
+___block_descriptor_40_e8_32w_e38_"UIView"24?0d8"NSLayoutDimension"16l
+_OBJC_SELECTOR_REFERENCES_.32
+_OBJC_SELECTOR_REFERENCES_.34
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_SELECTOR_REFERENCES_.38
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.44
+_OBJC_SELECTOR_REFERENCES_.46
+___block_descriptor_40_e8_32w_e40_"UIView"24?0d8"NSLayoutXAxisAnchor"16l
+___block_descriptor_40_e8_32w_e40_"UIView"24?0d8"NSLayoutYAxisAnchor"16l
+___block_descriptor_40_e8_32w_e19_"UIView"24?0d8d16l
+___block_descriptor_40_e8_32w_e26_"UIView"24?0{CGSize=dd}8l
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_SELECTOR_REFERENCES_.56
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIView_$_Anchor
+__OBJC_$_CATEGORY_UIView_$_Anchor
+/Users/boxinkeji/Desktop/MyBlocks/RPLayoutAnchor/RPAnchor/RPLayoutAnchor/UIView+Anchor.m
+RPAnchor/RPLayoutAnchor/UIView+Anchor.m
+__27-[UIView(Anchor) rp_cgsize]_block_invoke
+__25-[UIView(Anchor) rp_size]_block_invoke
+__28-[UIView(Anchor) rp_centerY]_block_invoke
+__28-[UIView(Anchor) rp_centerX]_block_invoke
+__27-[UIView(Anchor) rp_center]_block_invoke
+__44-[UIView(Anchor) rp_multiplierGreaterHeight]_block_invoke
+__34-[UIView(Anchor) rp_greaterHeight]_block_invoke
+__41-[UIView(Anchor) rp_multiplierLessHeight]_block_invoke
+__31-[UIView(Anchor) rp_lessHeight]_block_invoke
+__37-[UIView(Anchor) rp_multiplierHeight]_block_invoke
+__27-[UIView(Anchor) rp_height]_block_invoke
+__43-[UIView(Anchor) rp_multiplierGreaterWidth]_block_invoke
+__33-[UIView(Anchor) rp_greaterWidth]_block_invoke
+__40-[UIView(Anchor) rp_multiplierLessWidth]_block_invoke
+__30-[UIView(Anchor) rp_lessWidth]_block_invoke
+__36-[UIView(Anchor) rp_multiplierWidth]_block_invoke
+__26-[UIView(Anchor) rp_width]_block_invoke
+__27-[UIView(Anchor) rp_bottom]_block_invoke
+__26-[UIView(Anchor) rp_right]_block_invoke
+__25-[UIView(Anchor) rp_left]_block_invoke
+__24-[UIView(Anchor) rp_top]_block_invoke
+__29-[UIView(Anchor) rp_trailing]_block_invoke
+__28-[UIView(Anchor) rp_leading]_block_invoke
+__29-[UIView(Anchor) rp_activate]_block_invoke
+__28-[UIView(Anchor) rp_addView]_block_invoke
+__destroy_helper_block_e8_32w
+__copy_helper_block_e8_32w
+__27-[UIView(Anchor) rp_config]_block_invoke
+-[UIView(Fetch) setLeading:]
+-[UIView(Fetch) leading]
+-[UIView(Fetch) setTrailing:]
+-[UIView(Fetch) trailing]
+-[UIView(Fetch) setLeft:]
+-[UIView(Fetch) left]
+-[UIView(Fetch) setRight:]
+-[UIView(Fetch) right]
+-[UIView(Fetch) setTop:]
+-[UIView(Fetch) top]
+-[UIView(Fetch) setSafeTop:]
+-[UIView(Fetch) safeTop]
+-[UIView(Fetch) setBottom:]
+-[UIView(Fetch) bottom]
+-[UIView(Fetch) setSafeBottom:]
+-[UIView(Fetch) safeBottom]
+-[UIView(Fetch) setWidth:]
+-[UIView(Fetch) width]
+-[UIView(Fetch) setHeight:]
+-[UIView(Fetch) height]
+-[UIView(Fetch) setCenterX:]
+-[UIView(Fetch) centerX]
+-[UIView(Fetch) setCenterY:]
+-[UIView(Fetch) centerY]
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_SELECTOR_REFERENCES_.8
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_SELECTOR_REFERENCES_.30
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIView_$_Fetch
+__OBJC_$_PROP_LIST_UIView_$_Fetch
+__OBJC_$_CATEGORY_UIView_$_Fetch
+/Users/boxinkeji/Desktop/MyBlocks/RPLayoutAnchor/RPAnchor/RPLayoutAnchor/UIView+Fetch.m
+RPAnchor/RPLayoutAnchor/UIView+Fetch.m
+-[UIView(UpdateLayout) rp_remakeLeading]
+___40-[UIView(UpdateLayout) rp_remakeLeading]_block_invoke
+___40-[UIView(UpdateLayout) rp_remakeLeading]_block_invoke_2
+___copy_helper_block_e8_32s40s
+___destroy_helper_block_e8_32s40s
+-[UIView(UpdateLayout) rp_remakeTrailing]
+___41-[UIView(UpdateLayout) rp_remakeTrailing]_block_invoke
+___41-[UIView(UpdateLayout) rp_remakeTrailing]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeTop]
+___36-[UIView(UpdateLayout) rp_remakeTop]_block_invoke
+___36-[UIView(UpdateLayout) rp_remakeTop]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeBottom]
+___39-[UIView(UpdateLayout) rp_remakeBottom]_block_invoke
+___39-[UIView(UpdateLayout) rp_remakeBottom]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeLeft]
+___37-[UIView(UpdateLayout) rp_remakeLeft]_block_invoke
+___37-[UIView(UpdateLayout) rp_remakeLeft]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeRight]
+___38-[UIView(UpdateLayout) rp_remakeRight]_block_invoke
+___38-[UIView(UpdateLayout) rp_remakeRight]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeWidth]
+___38-[UIView(UpdateLayout) rp_remakeWidth]_block_invoke
+___38-[UIView(UpdateLayout) rp_remakeWidth]_block_invoke_2
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
+-[UIView(UpdateLayout) rp_remakeLessWidth]
+___42-[UIView(UpdateLayout) rp_remakeLessWidth]_block_invoke
+___42-[UIView(UpdateLayout) rp_remakeLessWidth]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeGreaterWidth]
+___45-[UIView(UpdateLayout) rp_remakeGreaterWidth]_block_invoke
+___45-[UIView(UpdateLayout) rp_remakeGreaterWidth]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeMultiplierWidth]
+___48-[UIView(UpdateLayout) rp_remakeMultiplierWidth]_block_invoke
+___48-[UIView(UpdateLayout) rp_remakeMultiplierWidth]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeMultiplierGreaterWidth]
+___55-[UIView(UpdateLayout) rp_remakeMultiplierGreaterWidth]_block_invoke
+___55-[UIView(UpdateLayout) rp_remakeMultiplierGreaterWidth]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeHeight]
+___39-[UIView(UpdateLayout) rp_remakeHeight]_block_invoke
+___39-[UIView(UpdateLayout) rp_remakeHeight]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeLessHeight]
+___43-[UIView(UpdateLayout) rp_remakeLessHeight]_block_invoke
+___43-[UIView(UpdateLayout) rp_remakeLessHeight]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeGreaterHeight]
+___46-[UIView(UpdateLayout) rp_remakeGreaterHeight]_block_invoke
+___46-[UIView(UpdateLayout) rp_remakeGreaterHeight]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeMultiplierHeight]
+___49-[UIView(UpdateLayout) rp_remakeMultiplierHeight]_block_invoke
+___49-[UIView(UpdateLayout) rp_remakeMultiplierHeight]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeMultiplierGreaterHeight]
+___56-[UIView(UpdateLayout) rp_remakeMultiplierGreaterHeight]_block_invoke
+___56-[UIView(UpdateLayout) rp_remakeMultiplierGreaterHeight]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeCenterX]
+___40-[UIView(UpdateLayout) rp_remakeCenterX]_block_invoke
+___40-[UIView(UpdateLayout) rp_remakeCenterX]_block_invoke_2
+-[UIView(UpdateLayout) rp_remakeCenterY]
+___40-[UIView(UpdateLayout) rp_remakeCenterY]_block_invoke
+___40-[UIView(UpdateLayout) rp_remakeCenterY]_block_invoke_2
+___block_descriptor_56_e8_32s40s_e35_v32?0"NSLayoutConstraint"8Q16^B24l
+_OBJC_SELECTOR_REFERENCES_.17
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_SELECTOR_REFERENCES_.23
+_OBJC_SELECTOR_REFERENCES_.25
+___block_descriptor_48_e8_32s_e35_v32?0"NSLayoutConstraint"8Q16^B24l
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.35
+_OBJC_SELECTOR_REFERENCES_.37
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIView_$_UpdateLayout
+__OBJC_$_CATEGORY_UIView_$_UpdateLayout
+/Users/boxinkeji/Desktop/MyBlocks/RPLayoutAnchor/RPAnchor/RPLayoutAnchor/UIView+UpdateLayout.m
+__40-[UIView(UpdateLayout) rp_remakeCenterY]_block_invoke_2
+RPAnchor/RPLayoutAnchor/UIView+UpdateLayout.m
+__40-[UIView(UpdateLayout) rp_remakeCenterY]_block_invoke
+__40-[UIView(UpdateLayout) rp_remakeCenterX]_block_invoke_2
+__40-[UIView(UpdateLayout) rp_remakeCenterX]_block_invoke
+__56-[UIView(UpdateLayout) rp_remakeMultiplierGreaterHeight]_block_invoke_2
+__56-[UIView(UpdateLayout) rp_remakeMultiplierGreaterHeight]_block_invoke
+__49-[UIView(UpdateLayout) rp_remakeMultiplierHeight]_block_invoke_2
+__49-[UIView(UpdateLayout) rp_remakeMultiplierHeight]_block_invoke
+__46-[UIView(UpdateLayout) rp_remakeGreaterHeight]_block_invoke_2
+__46-[UIView(UpdateLayout) rp_remakeGreaterHeight]_block_invoke
+__43-[UIView(UpdateLayout) rp_remakeLessHeight]_block_invoke_2
+__43-[UIView(UpdateLayout) rp_remakeLessHeight]_block_invoke
+__39-[UIView(UpdateLayout) rp_remakeHeight]_block_invoke_2
+__39-[UIView(UpdateLayout) rp_remakeHeight]_block_invoke
+__55-[UIView(UpdateLayout) rp_remakeMultiplierGreaterWidth]_block_invoke_2
+__55-[UIView(UpdateLayout) rp_remakeMultiplierGreaterWidth]_block_invoke
+__48-[UIView(UpdateLayout) rp_remakeMultiplierWidth]_block_invoke_2
+__48-[UIView(UpdateLayout) rp_remakeMultiplierWidth]_block_invoke
+__45-[UIView(UpdateLayout) rp_remakeGreaterWidth]_block_invoke_2
+__45-[UIView(UpdateLayout) rp_remakeGreaterWidth]_block_invoke
+__42-[UIView(UpdateLayout) rp_remakeLessWidth]_block_invoke_2
+__42-[UIView(UpdateLayout) rp_remakeLessWidth]_block_invoke
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32s
+__38-[UIView(UpdateLayout) rp_remakeWidth]_block_invoke_2
+__38-[UIView(UpdateLayout) rp_remakeWidth]_block_invoke
+__38-[UIView(UpdateLayout) rp_remakeRight]_block_invoke_2
+__38-[UIView(UpdateLayout) rp_remakeRight]_block_invoke
+__37-[UIView(UpdateLayout) rp_remakeLeft]_block_invoke_2
+__37-[UIView(UpdateLayout) rp_remakeLeft]_block_invoke
+__39-[UIView(UpdateLayout) rp_remakeBottom]_block_invoke_2
+__39-[UIView(UpdateLayout) rp_remakeBottom]_block_invoke
+__36-[UIView(UpdateLayout) rp_remakeTop]_block_invoke_2
+__36-[UIView(UpdateLayout) rp_remakeTop]_block_invoke
+__41-[UIView(UpdateLayout) rp_remakeTrailing]_block_invoke_2
+__41-[UIView(UpdateLayout) rp_remakeTrailing]_block_invoke
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40s
+__40-[UIView(UpdateLayout) rp_remakeLeading]_block_invoke_2
+__40-[UIView(UpdateLayout) rp_remakeLeading]_block_invoke

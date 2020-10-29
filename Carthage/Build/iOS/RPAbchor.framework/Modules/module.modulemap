@@ -1,0 +1,6 @@
+framework module RPAbchor {
+  umbrella header "RPAbchor.h"
+
+  export *
+  module * { export * }
+}

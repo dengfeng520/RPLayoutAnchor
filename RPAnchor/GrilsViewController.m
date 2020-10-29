@@ -23,20 +23,20 @@
     
     UIImageView *fristGrilImg = [[UIImageView alloc] init];
     fristGrilImg.rp_addView(self.view)
-    .rp_safeAreaTop(20,self.view,rpSafeTop)
-    .rp_centerX(0,self.view,rpCenterX)
+    .rp_top(30,self.view.safeTop)
+    .rp_centerX(0,self.view.centerX)
     .rp_height(250)
-    .rp_multiplierWidth(1.45,fristGrilImg,rpHeight);
+    .rp_multiplierWidth(1.5,fristGrilImg.height);
     fristGrilImg.image = [UIImage imageNamed:@"one_gril"];
     fristGrilImg.backgroundColor = UIColor.redColor;
     
     UIImageView *secondGrilImg = [[UIImageView alloc] init];
     [self.view addSubview:secondGrilImg];
     secondGrilImg.rp_config()
-    .rp_top(10,fristGrilImg,rpBottom)
-    .rp_centerX(0,self.view,rpCenterX)
+    .rp_top(10,fristGrilImg.bottomAnchor)
+    .rp_centerX(0,self.view.centerX)
     .rp_width(280)
-    .rp_multiplierHeight(1.46,secondGrilImg,rpWidth);
+    .rp_multiplierHeight(1.46,secondGrilImg.width);
     secondGrilImg.image = [UIImage imageNamed:@"second_gril"];
 }
 

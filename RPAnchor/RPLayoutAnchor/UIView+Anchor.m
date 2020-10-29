@@ -7,9 +7,7 @@
 //
 
 #import "UIView+Anchor.h"
-
-#define rp_weakSelf(object) autoreleasepool   {} __weak  typeof(object) weak##object = object;
-#define rp_strongSelf(object) autoreleasepool {} __strong  typeof(weak##object) object = weak##object;
+#import "RPLayoutExtension.h"
 
 @implementation UIView (Anchor)
 
@@ -17,98 +15,93 @@
     @rp_weakSelf(self);
     return ^(void){
         @rp_strongSelf(self);
-        self.translatesAutoresizingMaskIntoConstraints = false;
+        if (self.translatesAutoresizingMaskIntoConstraints) {
+            self.translatesAutoresizingMaskIntoConstraints = false;
+        }
         return self;
     };
 }
-// MARK:- addView
+// MARK: - addView
 - (UIView *(^)(UIView *))rp_addView {
     @rp_weakSelf(self);
     return ^(UIView *addView){
         NSAssert(addView, @"withView must not be empty");
         @rp_strongSelf(self);
         [addView addSubview:self];
-        self.translatesAutoresizingMaskIntoConstraints = false;
+        if (self.translatesAutoresizingMaskIntoConstraints) {
+            self.translatesAutoresizingMaskIntoConstraints = false;
+        }
+        return self;
+    };
+}
+// MARK: - activate
+- (UIView *(^)(void))rp_activate {
+    @rp_weakSelf(self);
+    return ^(void){
+        @rp_strongSelf(self);
+        if (self.translatesAutoresizingMaskIntoConstraints) {
+            self.translatesAutoresizingMaskIntoConstraints = false;
+            
+        }
         return self;
     };
 }
 // MARK: - leading
-- (UIView *(^)(CGFloat,UIView*))rp_leading {
+- (UIView *(^)(CGFloat,NSLayoutAnchor<NSLayoutXAxisAnchor *> *))rp_leading {
     @rp_weakSelf(self);
-    return ^(CGFloat leading,UIView *withView){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat leading,NSLayoutAnchor<NSLayoutXAxisAnchor *> *axis){
+        NSAssert(axis, @"axis must not be empty");
         @rp_strongSelf(self);
-        [[self.leadingAnchor constraintEqualToAnchor:withView.leadingAnchor constant:leading] setActive:true];
+        [[self.leadingAnchor constraintEqualToAnchor:axis] setActive:true];
         return self;
     };
 }
 // MARK: - trailing
-- (UIView *(^)(CGFloat,UIView*))rp_trailing {
+- (UIView *(^)(CGFloat,NSLayoutAnchor<NSLayoutXAxisAnchor *> *))rp_trailing {
     @rp_weakSelf(self);
-    return ^(CGFloat trailing,UIView *withView){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat trailing,NSLayoutAnchor<NSLayoutXAxisAnchor *> *axis){
+        NSAssert(axis, @"withView must not be empty");
         @rp_strongSelf(self);
-        [[self.trailingAnchor constraintEqualToAnchor:withView.trailingAnchor constant:trailing] setActive:true];
+        [[self.trailingAnchor constraintEqualToAnchor:axis] setActive:true];
         return self;
     };
 }
 // MARK: - top
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_top {
+- (UIView *(^)(CGFloat,NSLayoutAnchor<NSLayoutYAxisAnchor *> *))rp_top {
     @rp_weakSelf(self);
-    return ^(CGFloat top,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat top, NSLayoutAnchor<NSLayoutYAxisAnchor *> *anchor){
         @rp_strongSelf(self);
-        [[self.topAnchor constraintEqualToAnchor:[self fetchConstraint:dir withView:withView] constant:top] setActive:true];
-        return self;
-    };
-}
-// if iOS 11
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_safeAreaTop {
-    @rp_weakSelf(self);
-    return ^(CGFloat safeAreaTop,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
-        @rp_strongSelf(self);
-        [[self.topAnchor constraintEqualToAnchor:[self fetchConstraint:dir withView:withView] constant:safeAreaTop] setActive:true];
+        [[self.topAnchor constraintEqualToAnchor:anchor constant:top] setActive:true];
         return self;
     };
 }
 // MARK: - left
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_left {
+- (UIView *(^)(CGFloat,NSLayoutAnchor<NSLayoutXAxisAnchor *> *))rp_left {
     @rp_weakSelf(self);
-    return ^(CGFloat left,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat left,NSLayoutAnchor<NSLayoutXAxisAnchor *> *axis){
+        NSAssert(axis, @"axis must not be empty");
         @rp_strongSelf(self);
-        [[self.leftAnchor constraintEqualToAnchor:[self fetchConstraint:dir withView:withView] constant:left] setActive:true];
+        [[self.leftAnchor constraintEqualToAnchor:axis constant:left] setActive:true];
         return self;
     };
 }
 // MARK: - right
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_right {
+- (UIView *(^)(CGFloat,NSLayoutAnchor<NSLayoutXAxisAnchor *> *))rp_right {
     @rp_weakSelf(self);
-    return ^(CGFloat right,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat right,NSLayoutAnchor<NSLayoutXAxisAnchor *> *axis){
+        NSAssert(axis, @"axis must not be empty");
         @rp_strongSelf(self);
-        [[self.rightAnchor constraintEqualToAnchor:[self fetchConstraint:dir withView:withView] constant:right] setActive:true];
+        [[self.rightAnchor constraintEqualToAnchor:axis constant:right] setActive:true];
         return self;
     };
 }
 // MARK: - bottom
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_bottom {
+- (UIView *(^)(CGFloat,NSLayoutAnchor<NSLayoutYAxisAnchor *>*))rp_bottom {
     @rp_weakSelf(self);
-    return ^(CGFloat bottom,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat bottom,NSLayoutAnchor<NSLayoutYAxisAnchor *> *axis){
+        NSAssert(axis, @"axis must not be empty");
         @rp_strongSelf(self);
-        [[self.bottomAnchor constraintEqualToAnchor:[self fetchConstraint:dir withView:withView] constant:bottom] setActive:true];
-        return self;
-    };
-}
-// if iOS 11
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_safeAreaBottom {
-    @rp_weakSelf(self);
-    return ^(CGFloat bottom,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
-        @rp_strongSelf(self);
-        [[self.bottomAnchor constraintEqualToAnchor:[self fetchConstraint:dir withView:withView] constant:bottom] setActive:true];
+        [[self.bottomAnchor constraintEqualToAnchor:axis constant:bottom] setActive:true];
         return self;
     };
 }
@@ -121,12 +114,12 @@
         return self;
     };
 }
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_multiplierWidth {
+- (UIView *(^)(CGFloat,NSLayoutDimension *))rp_multiplierWidth {
     @rp_weakSelf(self);
-    return ^(CGFloat multiplier,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat multiplier,NSLayoutDimension *anchor){
+        NSAssert(anchor, @"anchor must not be empty");
         @rp_strongSelf(self);
-        [[self.widthAnchor constraintEqualToAnchor:[self fetchDimension:dir withView:withView] multiplier:multiplier] setActive:true];
+        [[self.widthAnchor constraintEqualToAnchor:anchor constant:multiplier] setActive: multiplier];
         return self;
     };
 }
@@ -138,11 +131,11 @@
         return self;
     };
 }
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_multiplierLessWidth {
+- (UIView *(^)(CGFloat,NSLayoutDimension *))rp_multiplierLessWidth {
     @rp_weakSelf(self);
-    return ^(CGFloat multiplier,UIView *withView,RPdirection dir){
+    return ^(CGFloat multiplier,NSLayoutDimension *anchor){
         @rp_strongSelf(self);
-        [[self.widthAnchor constraintLessThanOrEqualToAnchor:[self fetchDimension:dir withView:withView] multiplier:multiplier] setActive:true];
+        [[self.widthAnchor constraintLessThanOrEqualToAnchor:anchor multiplier:multiplier] setActive:true];
         return self;
     };
 }
@@ -154,12 +147,12 @@
         return self;
     };
 }
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_multiplierGreaterWidth {
+- (UIView *(^)(CGFloat,NSLayoutDimension *))rp_multiplierGreaterWidth {
     @rp_weakSelf(self);
-    return ^(CGFloat multiplier,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat multiplier,NSLayoutDimension *anchor){
+        NSAssert(anchor, @"anchor must not be empty");
         @rp_strongSelf(self);
-        [[self.widthAnchor constraintGreaterThanOrEqualToAnchor:[self fetchDimension:dir withView:withView] multiplier:multiplier] setActive:true];
+        [[self.widthAnchor constraintGreaterThanOrEqualToAnchor:anchor multiplier:multiplier] setActive:true];
         return self;
     };
 }
@@ -172,12 +165,12 @@
         return self;
     };
 }
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_multiplierHeight {
+- (UIView *(^)(CGFloat,NSLayoutDimension *))rp_multiplierHeight {
     @rp_weakSelf(self);
-    return ^(CGFloat multiplier,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat multiplier,NSLayoutDimension *anchor){
+        NSAssert(anchor, @"anchor must not be empty");
         @rp_strongSelf(self);
-        [[self.heightAnchor constraintEqualToAnchor:[self fetchDimension:dir withView:withView] multiplier:multiplier] setActive:true];
+        [[self.heightAnchor constraintEqualToAnchor:anchor multiplier:multiplier] setActive:true];
         return self;
     };
 }
@@ -189,12 +182,12 @@
         return self;
     };
 }
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_multiplierLessHeight {
+- (UIView *(^)(CGFloat,NSLayoutDimension *))rp_multiplierLessHeight {
     @rp_weakSelf(self);
-    return ^(CGFloat multiplier,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat multiplier,NSLayoutDimension *anchor){
+        NSAssert(anchor, @"anchor must not be empty");
         @rp_strongSelf(self);
-        [[self.heightAnchor constraintLessThanOrEqualToAnchor:[self fetchDimension:dir withView:withView] multiplier:multiplier] setActive:true];
+        [[self.heightAnchor constraintLessThanOrEqualToAnchor:anchor multiplier:multiplier] setActive:true];
         return self;
     };
 }
@@ -206,12 +199,12 @@
         return self;
     };
 }
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_multiplierGreaterHeight {
+- (UIView *(^)(CGFloat,NSLayoutDimension *))rp_multiplierGreaterHeight {
     @rp_weakSelf(self);
-    return ^(CGFloat multiplier,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat multiplier,NSLayoutDimension *anchor){
+        NSAssert(anchor, @"anchor must not be empty");
         @rp_strongSelf(self);
-        [[self.heightAnchor constraintGreaterThanOrEqualToAnchor:[self fetchDimension:dir withView:withView] multiplier:multiplier] setActive:true];
+        [[self.heightAnchor constraintGreaterThanOrEqualToAnchor:anchor multiplier:multiplier] setActive:true];
         return self;
     };
 }
@@ -227,22 +220,22 @@
     };
 }
 // MARK: - centerXAnchor
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_centerX {
+- (UIView *(^)(CGFloat,NSLayoutXAxisAnchor *))rp_centerX {
     @rp_weakSelf(self);
-    return ^(CGFloat centerX,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat centerX,NSLayoutXAxisAnchor *anchor){
+        NSAssert(anchor, @"anchor must not be empty");
         @rp_strongSelf(self);
-        [[self.centerXAnchor constraintEqualToAnchor:[self fetchConstraint:dir withView:withView] constant:centerX] setActive:true];
+        [[self.centerXAnchor constraintEqualToAnchor:anchor constant:centerX] setActive:true];
         return self;
     };
 }
 // MARK: - centerYAnchor
-- (UIView *(^)(CGFloat,UIView*,RPdirection))rp_centerY {
+- (UIView *(^)(CGFloat,NSLayoutYAxisAnchor *))rp_centerY {
     @rp_weakSelf(self);
-    return ^(CGFloat centerY,UIView *withView,RPdirection dir){
-        NSAssert(withView, @"withView must not be empty");
+    return ^(CGFloat centerY,NSLayoutYAxisAnchor *anchor){
+        NSAssert(anchor, @"withView must not be empty");
         @rp_strongSelf(self);
-        [[self.centerYAnchor constraintEqualToAnchor:[self fetchConstraint:dir withView:withView] constant:centerY] setActive:true];
+        [[self.centerYAnchor constraintEqualToAnchor:anchor constant:centerY] setActive:true];
         return self;
     };
 }
@@ -266,73 +259,6 @@
         return self;
     };
 }
-// MARK: - ===============
-- (NSLayoutAnchor *)fetchConstraint:(RPdirection)attribute withView:(UIView *)isView {
-    NSAssert(attribute, @"attribute must not be empty");
-    // -----------------------------
-    if (attribute == rpLeading) {
-       return isView.leadingAnchor;
-    }
-    // -----------------------------
-    if (attribute == rpTrailing) {
-        return isView.trailingAnchor;
-    }
-    // -----------------------------
-    if (attribute == rpLeft) {
-        return isView.leftAnchor;
-    }
-    // -----------------------------
-    if (attribute == rpRight) {
-        return isView.rightAnchor;
-    }
-    // -----------------------------
-    if (attribute == rpTop) {
-        return isView.topAnchor;
-    }
-    // -----------------------------
-    if (attribute == rpSafeTop) {
-        if (@available(iOS 11.0, *)) {
-            return isView.safeAreaLayoutGuide.topAnchor;
-        } else {
-            return isView.topAnchor;
-        }
-    }
-    // -----------------------------
-    if (attribute == rpBottom) {
-        return isView.bottomAnchor;
-    }
-    // -----------------------------
-    if (attribute == rpSafeBottom) {
-        if (@available(iOS 11.0, *)) {
-            return isView.safeAreaLayoutGuide.bottomAnchor;
-        } else {
-            return isView.bottomAnchor;
-        }
-    }
-    // -----------------------------
-    if (attribute == rpCenterX) {
-        return isView.centerXAnchor;
-    }
-    // -----------------------------
-    if (attribute == rpCenterY) {
-        return isView.centerYAnchor;
-    }
-    return self.superview.topAnchor;
-}
-
-- (NSLayoutDimension *)fetchDimension:(RPdirection)attribute withView:(UIView *)isView {
-    NSAssert(attribute, @"attribute must not be empty");
-    // -----------------------------
-    if (attribute == rpWidth) {
-        return isView.widthAnchor;
-    }
-    // -----------------------------
-    if (attribute == rpHeight) {
-        return isView.heightAnchor;
-    }
-    return self.superview.widthAnchor;
-}
-
 - (BOOL)isiPhoneX {
     if (@available(iOS 11.0, *)) {
         UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
