@@ -41,7 +41,8 @@
         @rp_strongSelf(self);
         if (self.translatesAutoresizingMaskIntoConstraints) {
             self.translatesAutoresizingMaskIntoConstraints = false;
-            
+            NSArray *constraints = self.constraints;
+            [NSLayoutConstraint activateConstraints:constraints];
         }
         return self;
     };
