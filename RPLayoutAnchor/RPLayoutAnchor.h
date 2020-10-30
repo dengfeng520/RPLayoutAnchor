@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIView+Anchor.h"
+#import "UIView+Fetch.h"
+#import "UIView+UpdateLayout.h"
 
 //! Project version number for RPLayoutAnchor.
 FOUNDATION_EXPORT double RPLayoutAnchorVersionNumber;

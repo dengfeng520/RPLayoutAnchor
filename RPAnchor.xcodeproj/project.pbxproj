@@ -25,7 +25,6 @@
 		1DA9C5E0254AD30000A5EB81 /* UIView+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9C595254ACC2B00A5EB81 /* UIView+Fetch.m */; };
 		1DA9C5E1254AD30000A5EB81 /* UIView+UpdateLayout.h in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9C59A254ACC2B00A5EB81 /* UIView+UpdateLayout.h */; };
 		1DA9C5E2254AD30000A5EB81 /* UIView+UpdateLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9C59B254ACC2B00A5EB81 /* UIView+UpdateLayout.m */; };
-		1DA9C5EC254B9CA800A5EB81 /* RPLayoutExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA9C598254ACC2B00A5EB81 /* RPLayoutExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DA9C5ED254B9CA800A5EB81 /* UIView+Anchor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA9C597254ACC2B00A5EB81 /* UIView+Anchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DA9C5EE254B9CA800A5EB81 /* UIView+Fetch.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA9C599254ACC2B00A5EB81 /* UIView+Fetch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DA9C5EF254B9CA800A5EB81 /* UIView+UpdateLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA9C59A254ACC2B00A5EB81 /* UIView+UpdateLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -142,7 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA9C5D6254AD2EE00A5EB81 /* RPLayoutAnchor.h in Headers */,
-				1DA9C5EC254B9CA800A5EB81 /* RPLayoutExtension.h in Headers */,
 				1DA9C5ED254B9CA800A5EB81 /* UIView+Anchor.h in Headers */,
 				1DA9C5EE254B9CA800A5EB81 /* UIView+Fetch.h in Headers */,
 				1DA9C5EF254B9CA800A5EB81 /* UIView+UpdateLayout.h in Headers */,
