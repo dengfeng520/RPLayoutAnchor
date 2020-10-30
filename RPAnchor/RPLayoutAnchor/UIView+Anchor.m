@@ -120,7 +120,7 @@
     return ^(CGFloat multiplier,NSLayoutDimension *anchor){
         NSAssert(anchor, @"anchor must not be empty");
         @rp_strongSelf(self);
-        [[self.widthAnchor constraintEqualToAnchor:anchor constant:multiplier] setActive: multiplier];
+        [[self.widthAnchor constraintEqualToAnchor:anchor constant:multiplier] setActive: true];
         return self;
     };
 }
