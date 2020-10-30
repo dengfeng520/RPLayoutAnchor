@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "RPAnchor"
   spec.version      = "1.4"
-  spec.summary      = "'RPAnchor' is a chain programming library."
+  spec.summary      = "'RPAnchor' is a chain programming lbrary."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?

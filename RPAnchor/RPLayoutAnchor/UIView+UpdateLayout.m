@@ -172,7 +172,7 @@
             [self.constraints enumerateObjectsUsingBlock:^(__kindof NSLayoutConstraint * _Nonnull constraint, NSUInteger idx, BOOL * _Nonnull stop) {
                 if (constraint.firstAttribute == NSLayoutAttributeWidth) {
                     [self removeConstraint:constraint];
-                    [[self.widthAnchor constraintEqualToAnchor:anchor constant:multiplier] setActive: true];
+                    [[self.widthAnchor constraintEqualToAnchor:anchor multiplier:multiplier] setActive: true];
                     *stop = YES;
                 }
             }];
@@ -257,7 +257,7 @@
             [self.constraints enumerateObjectsUsingBlock:^(__kindof NSLayoutConstraint * _Nonnull constraint, NSUInteger idx, BOOL * _Nonnull stop) {
                 if (constraint.firstAttribute == NSLayoutAttributeHeight) {
                     [self removeConstraint:constraint];
-                    [[self.heightAnchor constraintEqualToAnchor:anchor constant:multiplier] setActive: true];
+                    [[self.height constraintEqualToAnchor:anchor multiplier:multiplier] setActive: true];
                     *stop = YES;
                 }
             }];
